@@ -40,7 +40,7 @@ elif [[ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" || "$(expr substr $(un
     # Check if virtualenv is installed
     if ! command -v virtualenv &> /dev/null; then
         # Install virtualenv using pip
-        pip install virtualenv
+        pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org virtualenv
     fi
 
     # Check if the virtual environment exists
@@ -82,7 +82,7 @@ if [ ! -d "yolov5" ]; then
     # Change to the yolov5 directory
     cd yolov5
     # Install requirements using pip
-    pip install -r requirements.txt
+    pip install --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.orgl -r requirements.txt
     echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Environment created>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 else
     echo "yolov5 already exists. Skipping cloning."
