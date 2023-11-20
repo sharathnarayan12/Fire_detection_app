@@ -8,10 +8,6 @@ This Bash script sets up a Python virtual environment, clones YOLOv5 and Yolov_5
 ## Instructions
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/sharathnarayan12/Fire_detection_app.git
-   cd Fire_detection_app
-
-2. chmod +x detection.sh env_created.sh run_main.sh
-
-3. ./run_main.sh path /0 for live detection
+     git clone https://github.com/sharathnarayan12/Fire_detection_app.git
+     chmod +x *
+    ./run_main.sh path of video or 0 for live detection : example ./run_main.sh 0 or ./run_main.sh /path of video file mp4 file
